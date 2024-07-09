@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body
+{
+    height: 100%;
+    width: 100%;
+    font-family: "DM Sans", sans-serif;
+    background-color: #111;
+    color: #ffff;
+    font-size: 62.5%;
+    position: relative;
+}
+
+
+a
+{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.nav-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    width: 100%;
+    padding: 1rem;
+    background-color:#111111b1;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.logo
+{
+    font-size: 3.5rem;
+}
+
+.logo a
+{
+    text-decoration: none;
+    color: #ffff;
+}
+
+.nav-list
+{
+    display: flex;
+    list-style: none;
+    width: 45%;
+    justify-content: space-around;
+}
+
+.nav-item
+{
+    transition: ease-out 0.5s;
+}
+
+.nav-item a
+{
+    text-decoration: none;
+    color: #ffff;
+    transition: ease-out 0.5s;
+}
+
+.nav-item:hover{
+    scale: 1.1;
+    text-decoration: underline;
+    /* color:cornflowerblue; */
+}
+.nav-item a:hover{
+    scale: 1.2;
+    color:cornflowerblue;
+}
+
+/* hero Section */
+
+.hero-container
+{
+    width: 100%;
+    padding: 2.5rem;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 5rem;
+}
+
+.hero-text{
+    line-height: 9rem;
+}
+
+.hero-h
+{
+    line-height: 6.5rem;
+}
+.hero-h1
+{
+    font-size: 3rem;
+}
+
+.hero-h2
+{
+    font-size: 7rem;
+    font-weight: 600;
+}
+
+.hero-h3
+{
+    font-size: 3.5rem;
+    font-weight: 500;
+}
+
+.resume-btn
+{
+    width: fit-content;
+    height: fit-content;
+    padding: 1.5rem;
+    font-size: 2rem;
+    background-color: rgb(63, 122, 233);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.resume-btn:hover
+{
+    background-color: dodgerblue;
+    scale: 1.1;
+}
+
+.hero-img img
+{
+    width: 50rem;
+    border-radius: 50%;
+}
+
+/* Project Section */
+
+.heading
+{
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.project-container
+{
+    width: 100%;
+    min-height: 100vh;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 2rem;
+    padding: 2rem;
+
+}
+
+
+.project-card
+{
+    background-image: linear-gradient(146deg, #073757, #082a3e 25%, #031921 55%, #041a2a 75%, #041315 101%);
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content:space-between;
+    padding: 3rem;
+    border-radius: 25px;
+    transition: ease 0.5s;
+    margin: 50px;
+}
+
+.project-card:hover
+{
+    border: 2px solid rgb(57, 188, 240);
+}
+
+.project-text
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    width: 45%;
+}
+
+.project-title
+{
+    font-size: 3rem;
+}
+
+.project-desc
+{
+    font-size: 2rem;
+}
+
+.project-links
+{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+
+.project-links a
+{
+    text-decoration: underline;
+    font-weight: 600;
+    transition: linear 0.3s;
+}
+
+.project-links a:hover
+{
+    scale: 1.05;
+    color: #168bda;
+
+}
+
+.project-link
+{
+    font-size: 1.5rem;
+}
+
+.project-img
+{
+    width: 45%;
+    /* padding: 10px; */
+    box-shadow: #111 0px 0px 5px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.project-img img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    transition: ease-in 0.3s;
+}
+
+.project-img img:hover
+{
+    scale: 1.1;
+}
+
+/* About Section */
+
+.about-container
+{
+    width: 100%;
+    min-height: 100vh;
+    max-height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem;
+    font-size: 2rem;
+}
+
+.about-left
+{
+    display: flex;
+    width: 45%;
+    flex-wrap: wrap;
+    /* border-right: 2px solid #444; */
+}
+
+.divider
+{
+    width: 2px;
+    height: 70vh;
+    background-color: #fff;
+}
+
+.about-right
+{
+    width: 45%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+}
+
+.about-skills
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    transition: linear 0.3s;
+    font-weight: 500;
+}
+
+.about-skills:hover
+{
+    color: dodgerblue;
+    border: solid 1px dodgerblue;
+}
+
+
+/* Contact Section */
+
+.contact-container
+{
+    width: 100%;
+    display: flex;
+    padding: 5rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contact-left
+{
+    width: 45%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2rem;
+}
+
+.social
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    border: 1px solid #444;
+    border-radius: 25px;
+    font-size: 1.5rem;
+    transition: linear 0.3s;
+    font-weight: 500;
+    width: 20rem;
+}
+
+.social:hover
+{
+    color: dodgerblue;
+    border: solid 1px dodgerblue;
+}
+
+.social img
+{
+    width: 3.5rem;
+    margin: 10px;
+}
+
+.contact-right
+{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+
+.contact-right input
+{
+    width: 75%;
+    height: fit-content;
+    font-size: 1.5rem;
+    padding: 10px;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #fff;
+    color: #ffff;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.contact-right textarea
+{
+    width: 75%;
+    min-height: 15rem;
+    max-height: fit-content;
+    font-size: 1.5rem;
+    padding: 10px;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.contact-right button
+{
+    width: fit-content;
+    height: fit-content;
+    padding: 12px;
+    font-size: 2rem;
+    border: none;
+    background-color: dodgerblue;
+    color: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+
+
+}
+
+.contact-right label{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+form
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
